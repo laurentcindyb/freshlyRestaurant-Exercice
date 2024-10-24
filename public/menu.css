@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Athiti", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav {
+    padding: 20px 0 60px 0;
+    background: white;
+    height: 200px;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo p {
+    margin-left: 10px;
+    display: flex;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+nav li:hover { 
+    background: #950000;
+    transition:  0.3s;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+nav img {
+    height: 150px;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 260px;
+    margin-top: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    border: #ebe3db solid 2px;  
+    height: 30px;
+    width: 80px;
+    background: #ebe3db;
+    margin: 15px;
+    text-align: center;
+}
+
+
+/* MENU DETAILS */
+
+.menu-details {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+h2 {
+    font-family: "Merienda", cursive;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sous-titre {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-details ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+
+.menu-details li {
+    list-style: none;
+    
+}
+
+.options a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-details ul li {
+    list-style: none;
+    border: #ebe3db solid 2px;  
+    height: 30px;
+    width: 90px;
+    background: #ebe3db;
+    margin: 15px;
+    text-align: center;
+}
+
+.menu-details ul li:hover {
+    background: #950000;
+}
+
+.menu-details ul a:hover {
+    color: white;
+}
+
+/* Menu mosaique */
+
+.menu-mosaique {
+    background: #ebe3db;
+    width: 100%;
+    height: 700px;
+    margin-top: 40px;
+}
+
+.grid-mosaique {
+    display: grid; 
+    grid-template-columns: repeat(3,300px); 
+    grid-template-rows: repeat(4,200px); 
+    gap: 1rem; 
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+/* Survol des images */ 
+
+
+.grid-mosaique img {
+    height: 200px;
+    width: 300px;
+   
+}
+
+.overlay-img {
+    position: relative; 
+    display: inline-block;
+    overflow: hidden; 
+  }
+
+
+
+.overlay-img .hover-text {
+   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out; 
+
+    background-color: rgba(76,67,67,.9);
+    color: white;
+    padding: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overlay-img:hover img {
+    transform: scale(1.1); 
+  }
+
+  .overlay-img:hover  .hover-text {
+    opacity: 1; 
+    transform: scale(1.1);
+  }
+
+
+
+/* DESERTS */
+
+.deserts {
+    margin-top: 60px;
+}
+
+.grid-deserts img {
+    height: 200px;
+    width: 300px;
+   
+}
+
+.grid-deserts {
+    background: #ebe3db;
+    width: 100%;
+    height: 280px;
+    margin-top: 40px;
+
+    display: grid; 
+    grid-template-columns: repeat(3,300px); 
+    grid-template-rows: repeat(2,200px); 
+    gap: 1rem; 
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+/* COCKTAILS */
+
+.cocktails {
+    margin-top: 60px;
+}
+
+.grid-cocktails img {
+    height: 200px;
+    width: 300px;
+}
+
+.grid-cocktails {
+    background: #ebe3db;
+    width: 100%;
+    height: 280px;
+    margin-top: 40px;
+
+    display: grid; 
+    grid-template-columns: repeat(3,300px); 
+    grid-template-rows: repeat(2,200px); 
+    gap: 1rem; 
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+
+/* FOOTER */
+
+.footer-top {
+    background-image: url("/ressources/autres images/footer-bg.jpg");
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,200px); 
+    grid-template-rows: repeat(2,100px); 
+    gap: 2rem; 
+    justify-content: center;
+}
+
+.footer-top h4 {
+    color: white;
+    font-size: 18px;
+    font-family: "Merienda", cursive;
+    text-align: center;
+    border-bottom: white dashed 1px;
+    padding: 15px;
+}
+
+
+.footer-top p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+   
+}
+
+.social-icons a {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.footer-bottom {
+    height: 180px;
+    background: #4c4343;
+    opacity: 0.9;
+    position: relative;
+}
+
+
+.footer-bottom img {
+    opacity: 1; 
+    margin-top: 20px;
+    margin-left: 750px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}

@@ -1,0 +1,131 @@
+@media screen and (max-width: 780px) {
+    
+    * {
+        flex-direction: column;
+    }
+  
+    .container {
+        max-width: 780px;
+        
+    }
+
+    /* NAVIGATION */
+
+    .logo img {
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo p {
+        text-align: center;
+        display: flex;
+    }
+
+    nav ul {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 0;
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+    }
+
+    nav li:focus { 
+        background: #950000;
+        transition:  0.3s;
+    }
+    
+    nav li a:focus {
+        color: white;
+    }
+
+
+    /* SLIDER */
+
+    .slider {
+        margin-top: 200px;
+        height: 330px;
+        
+    }
+
+   
+    /* WELCOME */
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .welcome-img {
+        width: 100%;
+    }
+
+
+    /* DETAILS DU MENU */
+
+    .grid-menu {
+        display: grid; 
+        grid-template-columns: repeat(1,400px); 
+        grid-template-rows: repeat(3,900px); 
+        gap: 1rem; 
+        justify-content : flex-start;
+        
+    }
+
+    #card {
+        width: 750px;
+        height: 900px;
+        margin-left: 15px;
+        margin-right: 10px;
+       
+    }
+    
+
+    button {
+        width: 80%;
+        
+    }
+
+    button a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 2200px;
+    }
+
+    
+    .footer-top {
+        background-image: url("/ressources/autres images/footer-bg.jpg");
+        height: 580px;
+        display: grid;
+        grid-template-columns: repeat(1,760px); 
+        grid-template-rows: repeat(3,200px); 
+        gap: 1rem; 
+        justify-content: center;
+    }
+
+    .social-icons {
+        flex-direction: row;
+       
+    }
+  
+
+    .footer-bottom {
+        height: 220px;
+    }
+
+    .footer-bottom img {
+        margin-left: 360px;
+    }
+    
+
+}
